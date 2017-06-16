@@ -1,0 +1,21 @@
+escape ^t^t
+
+startup_message off
+
+defencoding utf-8
+encoding utf-8 utf-8
+
+defscrollback 100000
+
+caption always "%{= wb} %-w%{=bu dr}%n %t%{-}%+w"
+
+# operate regions like emacs
+bind ^x command -c escape-x-map
+bind -c escape-x-map 2 split
+bind -c escape-x-map 3 split -v
+bind -c escape-x-map o focus
+bind -c escape-x-map 1 only
+bind -c escape-x-map 0 remove
+bind -c escape-x-map } resize +10
+bind -c escape-x-map { resize -10
+bind -c escape-x-map + resize =
