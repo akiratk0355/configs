@@ -134,7 +134,7 @@ eval "$(rbenv init -)"
 
 ### for nvm, Node.js
 source ~/.nvm/nvm.sh
-export PATH=/home/akira/.nvm/versions/node/v5.6.0/bin/:$PATH
+export PATH=/home/akira/.nvm/versions/node/v6.11.0/bin:$PATH
 
 # The next line updates PATH for the Google Cloud SDK.
 source '/home/akira/google-cloud-sdk/path.bash.inc'
