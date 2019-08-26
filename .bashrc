@@ -126,6 +126,8 @@ export PATH=/home/akira/.cabal/bin:$PATH
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
+### Go
+export PATH=$PATH:/usr/local/go/bin
 
 ### for rbenv
 export RBENV_ROOT=/home/akira/ruby-workspace/rbenv
