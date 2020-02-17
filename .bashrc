@@ -128,25 +128,15 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 ### Go
 export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:$(go env GOPATH)/bin
 
 ### for rbenv
 export RBENV_ROOT=/home/akira/ruby-workspace/rbenv
 export PATH=$RBENV_ROOT/bin:$PATH
 eval "$(rbenv init -)"
 
-### for nvm, Node.js
-source ~/.nvm/nvm.sh
-export PATH=/home/akira/.nvm/versions/node/v6.11.0/bin:$PATH
-
-# The next line updates PATH for the Google Cloud SDK.
-source '/home/akira/google-cloud-sdk/path.bash.inc'
-
-# The next line enables shell command completion for gcloud.
-source '/home/akira/google-cloud-sdk/completion.bash.inc'
-
 # for autoenv
 source `which activate.sh`
-
 
 # set locale
 export LC_ALL=en_US.UTF-8
