@@ -123,20 +123,9 @@ if ! shopt -oq posix; then
 fi
 export PATH=/home/akira/.cabal/bin:$PATH
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
 ### Go
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$(go env GOPATH)/bin
-
-### for rbenv
-export RBENV_ROOT=/home/akira/ruby-workspace/rbenv
-export PATH=$RBENV_ROOT/bin:$PATH
-eval "$(rbenv init -)"
-
-# for autoenv
-source `which activate.sh`
 
 # set locale
 export LC_ALL=en_US.UTF-8
